@@ -5,11 +5,11 @@
   "version": "1.0.0",
   "author": {
     "name": "RollyOS",
-    "url": "https://github.com/rollyos"
+    "url": "https://github.com/RollySeth"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rollyos/story-alchemist-plugin"
+    "url": "https://github.com/RollySeth/story-alchemist-plugin"
   },
   "license": "MIT",
   "keywords": [
@@ -30,9 +30,9 @@
     "analysis"
   ],
   "icon": "🎭",
-  "homepage": "https://github.com/rollyos/story-alchemist-plugin#readme",
+  "homepage": "https://github.com/RollySeth/story-alchemist-plugin#readme",
   "bugs": {
-    "url": "https://github.com/rollyos/story-alchemist-plugin/issues"
+    "url": "https://github.com/RollySeth/story-alchemist-plugin/issues"
   },
   "requirements": {
     "platforms": ["windows", "macos", "linux"],
