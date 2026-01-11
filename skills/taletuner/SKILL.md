@@ -81,29 +81,84 @@ Read and analyze the PowerPoint file to understand:
 
 ### Step 3: Provide Feedback
 
-Your response must include:
+Your response MUST follow this structured format with decorative boxes:
 
-**a. Creative Name with Emoji**
-- Give the presentation a fun, creative name that reflects its overall story score or vibe
-- Include an appropriate emoji
-- Start with the sentence - 'Your presentation is:' then add the overall presentation name, score & emoji.
-- Follow "The Vibe Test" guidelines below
+**OPENING: Title in a bold box (all on one line)**
+```
+╔═══════════════════════════════════════════════════════════════╗
+║ YOUR PRESENTATION IS: 🎭 **[CREATIVE NAME]** (Story Score: X/10) ║
+╚═══════════════════════════════════════════════════════════════╝
+```
 
-**b. One-Line Summary**
-- Provide a playful but professional one-line summary of the deck's story
-- Should be fun and memorable
+**STRUCTURE: Use simple one-line box headers with content below**
 
-**c. Enhancement Tips**
-- Provide actionable tips to enhance the story
-- Consider:
-  - Slide structure and flow
-  - Optimal slide length
-  - Slide or section ordering
-  - Heading effectiveness
-  - Readability for the target audience
-  - Overall vibe and tone alignment
+**Section 1: One-Line Story Summary**
+```
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 📖 ONE-LINE STORY SUMMARY                                  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-Format the entire output in fun and organized way with playful emoji, keeping it exciting & engaging. 
+[One playful, insightful sentence that captures the narrative
+and makes them understand the story strength]
+```
+
+**Section 2: What's Working Brilliantly**
+```
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 💡 WHAT'S WORKING BRILLIANTLY                              ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+✅ **[Strength 1]** - [Brief explanation]
+
+✅ **[Strength 2]** - [Brief explanation]
+
+✅ **[Strength 3]** - [Brief explanation]
+```
+
+**Section 3: Enhancement Tips**
+```
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🎯 ENHANCEMENT TIPS                                        ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+1️⃣ **[Bold Title]** - [Specific, actionable suggestion about slide structure/flow]
+
+2️⃣ **[Bold Title]** - [Specific suggestion about content/ordering]
+
+3️⃣ **[Bold Title]** - [Specific suggestion about transitions/coherence]
+
+4️⃣ **[Bold Title]** - [Specific suggestion about headings/readability]
+
+5️⃣ **[Bold Title]** - [Specific suggestion about audience fit/tone]
+```
+
+**Section 4: Audience Vibe Check**
+```
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🎭 AUDIENCE VIBE CHECK                                     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+[2-3 sentences about who this presentation is perfect for and who
+might need a different approach. Be specific about audience types.]
+```
+
+**Section 5: Bottom Line**
+```
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🏆 BOTTOM LINE                                             ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+[Final encouraging summary with next steps or key takeaway. Be
+supportive and actionable.]
+```
+
+**FORMATTING REQUIREMENTS:**
+- Title: Use ╔═══╗ box with everything on ONE line
+- Section headers: Use ┏━━━┓ boxes with header text only, content below
+- Make liberal use of emojis throughout for visual interest
+- Use bold text for emphasis
+- Keep boxes and lines properly aligned
+- One blank line between sections for clean spacing 
 
 ## The Vibe Test for Naming
 
@@ -123,15 +178,51 @@ If names feel too corporate or generic, regenerate with more personality.
 ## Example Output Format
 
 ```
-🎭 **The Phoenix Rising** (Story Score: 8/10)
+╔═══════════════════════════════════════════════════════════════╗
+║ YOUR PRESENTATION IS: 🎭 **The Phoenix Rising** (Story Score: 8/10) ║
+╚═══════════════════════════════════════════════════════════════╝
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 📖 ONE-LINE STORY SUMMARY                                  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 Your deck tells a compelling transformation story that builds momentum beautifully through Act 1 and 2, though the ending could use a stronger call-to-action punch.
 
-**Tips to Level Up:**
-- Consider moving your success metrics (slides 12-14) earlier to build credibility upfront
-- Your slide 7 has 3 different ideas competing - split it into 2 slides for clarity
-- The transition from problem (slides 3-5) to solution (slides 6-8) is abrupt - add a bridge slide
-- Audience vibe: This feels right for executives, but might be too high-level for technical teams
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 💡 WHAT'S WORKING BRILLIANTLY                              ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+✅ **Crystal-clear narrative arc** - Your story flows from problem to solution with logical progression
+
+✅ **Data-driven credibility** - Strong use of metrics and evidence to support key claims
+
+✅ **Compelling opener** - The first three slides hook the audience immediately
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🎯 ENHANCEMENT TIPS                                        ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+1️⃣ **Move success metrics earlier** - Consider moving slides 12-14 earlier to build credibility upfront
+
+2️⃣ **Split competing ideas** - Your slide 7 has 3 different ideas competing - split into 2 slides for clarity
+
+3️⃣ **Add transition bridge** - The jump from problem (slides 3-5) to solution (slides 6-8) is abrupt
+
+4️⃣ **Strengthen the closer** - Your final slide needs a more powerful call-to-action
+
+5️⃣ **Optimize slide density** - Slides 9 and 11 feel text-heavy; consider breaking them up
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🎭 AUDIENCE VIBE CHECK                                     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+This presentation is perfect for executive leadership and board-level audiences who want strategic insights without excessive detail. For technical teams or hands-on practitioners, you'd need to add more implementation specifics and technical depth.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🏆 BOTTOM LINE                                             ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+You've built a strong strategic narrative with great bones. Tighten up the middle transitions and power up that ending, and you'll have a presentation that commands the room.
 ```
 
 ## Notes
