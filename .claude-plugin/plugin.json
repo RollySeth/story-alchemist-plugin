@@ -1,5 +1,5 @@
 {
-  "name": "story-alchemist-plugin",
+  "name": "story-alchemist",
   "description": "A plugin for analyzing PowerPoint presentations and improving their storytelling",
   "version": "1.0.0",
   "author": {
@@ -9,5 +9,4 @@
     "./commands/TaleTuner.md",
     "./commands/AuraSense.md"
   ]
-  
 }
