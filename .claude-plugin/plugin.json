@@ -6,16 +6,8 @@
     "name": "RollyOS"
   },
   "commands": [
-    {
-      "name": "taletuner",
-      "description": "Analyze PowerPoint presentations for story cohesion and structure",
-      "instructions": "commands/TaleTuner.md"
-    },
-    {
-      "name": "aurasense",
-      "description": "Analyze PowerPoint presentations for their emotional vibe, aesthetic choices, and design personality",
-      "instructions": "commands/AuraSense.md"
-    }
+    "./commands/TaleTuner.md",
+    "./commands/AuraSense.md"
   ]
   
 }
