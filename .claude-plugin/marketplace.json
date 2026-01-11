@@ -16,12 +16,7 @@
         "name": "RollyOS",
         "email": "rolly.seth@gmail.com"
       },
-      "source": "./",
-      "category": "productivity",
-      "skills": [
-        "taletuner",
-        "aurasense"
-      ]
+      "source": "./"
     }
   ]
 }
