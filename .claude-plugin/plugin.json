@@ -1,92 +1,21 @@
 {
-  "name": "story-alchemist",
-  "displayName": "Story Alchemist - PowerPoint Analyzer",
-  "description": "Transform your PowerPoint presentations with AI-powered story structure and aesthetic design analysis. Get actionable feedback to make your decks captivating and memorable.",
+  "name": "story-alchemist-plugin",
+  "description": "A plugin for analyzing PowerPoint presentations and improving their storytelling",
   "version": "1.0.0",
   "author": {
-    "name": "RollyOS",
-    "url": "https://github.com/RollySeth"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/RollySeth/story-alchemist-plugin"
-  },
-  "license": "MIT",
-  "keywords": [
-    "powerpoint",
-    "presentation",
-    "storytelling",
-    "design",
-    "analysis",
-    "aesthetic",
-    "slides",
-    "deck",
-    "pitch",
-    "business"
-  ],
-  "categories": [
-    "productivity",
-    "design",
-    "analysis"
-  ],
-  "icon": "🎭",
-  "homepage": "https://github.com/RollySeth/story-alchemist-plugin#readme",
-  "bugs": {
-    "url": "https://github.com/RollySeth/story-alchemist-plugin/issues"
-  },
-  "requirements": {
-    "platforms": ["windows", "macos", "linux"],
-    "dependencies": {
-      "python": ">=3.8",
-      "packages": ["pywin32", "python-pptx"]
-    },
-    "optional": {
-      "powerpoint": "Required for legacy .ppt file support (Windows)"
-    }
+    "name": "RollyOS"
   },
   "commands": [
     {
       "name": "taletuner",
-      "displayName": "TaleTuner - Story Analysis",
-      "description": "Analyze PowerPoint presentations for story cohesion, narrative flow, and structural effectiveness. Get a creative score, one-line summary, and actionable tips to enhance your storytelling.",
-      "instructions": "commands/TaleTuner.md",
-      "examples": [
-        "/taletuner path/to/presentation.pptx",
-        "Analyze my pitch deck story",
-        "Review the narrative flow in quarterly-review.pptx"
-      ],
-      "icon": "📖",
-      "category": "storytelling"
+      "description": "Analyze PowerPoint presentations for story cohesion and structure",
+      "instructions": "commands/TaleTuner.md"
     },
     {
       "name": "aurasense",
-      "displayName": "Aura Sense - Aesthetic Analysis",
-      "description": "Analyze PowerPoint presentations for emotional vibe, aesthetic choices, and design personality. Discover your deck's aura with design DNA breakdown, ratings, and specific enhancement suggestions.",
-      "instructions": "commands/AuraSense.md",
-      "examples": [
-        "/aurasense path/to/presentation.pptx",
-        "What's the vibe of my deck?",
-        "Analyze the aesthetic of sales-deck.pptx"
-      ],
-      "icon": "🎨",
-      "category": "design"
-    }
-  ],
-  "supportedFormats": [
-    {
-      "extension": ".pptx",
-      "description": "Modern PowerPoint format",
-      "support": "full"
-    },
-    {
-      "extension": ".ppt",
-      "description": "Legacy PowerPoint format",
-      "support": "windows-full, other-limited"
-    },
-    {
-      "extension": ".pdf",
-      "description": "PDF export of presentations",
-      "support": "visual-only"
+      "description": "Analyze PowerPoint presentations for their emotional vibe, aesthetic choices, and design personality",
+      "instructions": "commands/AuraSense.md"
     }
   ]
+  
 }
