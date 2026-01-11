@@ -1,0 +1,68 @@
+{
+  "name": "story-alchemist",
+  "displayName": "Story Alchemist - PowerPoint Analyzer",
+  "owner": {
+    "name": "RollyOS",
+    "email": "rolly.seth@gmail.com",
+    "url": "https://github.com/RollySeth"
+  },
+  "repository": "https://github.com/RollySeth/story-alchemist-plugin",
+  "version": "1.0.0",
+  "description": "Transform PowerPoint presentations with AI-powered story structure and aesthetic design analysis. Includes two complementary skills: TaleTuner for narrative analysis and Aura Sense for aesthetic critique.",
+  "skills": [
+    {
+      "name": "taletuner",
+      "displayName": "TaleTuner - Story Analysis",
+      "description": "Analyzes presentation story structure, narrative flow, and coherence. Provides creative scoring and actionable tips to enhance storytelling.",
+      "icon": "📖",
+      "command": "/taletuner",
+      "version": "1.0.0"
+    },
+    {
+      "name": "aurasense",
+      "displayName": "Aura Sense - Aesthetic Analysis",
+      "description": "Evaluates presentation design, emotional vibe, and visual personality. Delivers creative aura ratings and specific aesthetic improvements.",
+      "icon": "🎨",
+      "command": "/aurasense",
+      "version": "1.0.0"
+    }
+  ],
+  "requirements": {
+    "python": ">=3.8",
+    "packages": [
+      "pywin32",
+      "python-pptx"
+    ],
+    "platforms": {
+      "windows": {
+        "fullSupport": true,
+        "notes": "Full support for .pptx, .ppt, and .pdf with PowerPoint installed"
+      },
+      "macos": {
+        "limitedSupport": true,
+        "notes": "Supports .pptx and .pdf formats. Legacy .ppt requires conversion."
+      },
+      "linux": {
+        "limitedSupport": true,
+        "notes": "Supports .pptx and .pdf formats. Legacy .ppt requires conversion."
+      }
+    }
+  },
+  "supportedFormats": [".pptx", ".ppt", ".pdf"],
+  "keywords": [
+    "powerpoint",
+    "presentation",
+    "storytelling",
+    "design",
+    "analysis",
+    "aesthetic",
+    "slides",
+    "deck",
+    "pitch",
+    "business"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/RollySeth/story-alchemist-plugin#readme",
+  "bugs": "https://github.com/RollySeth/story-alchemist-plugin/issues",
+  "documentation": "https://github.com/RollySeth/story-alchemist-plugin/blob/main/README.md"
+}
