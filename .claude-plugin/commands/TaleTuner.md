@@ -21,6 +21,56 @@ Analyze PowerPoint presentations to evaluate their story cohesion, structure, an
 The user will provide a PowerPoint file path. If no file is provided, respond with:
 "Please provide a PowerPoint file for me to evaluate the story."
 
+**Supported Formats:** .pptx (modern), .ppt (legacy), .pdf
+
+### Step 1.5: Handle File Format
+
+**For PDF files:** Use the Read tool directly to view pages and extract text.
+
+**For PowerPoint files (.pptx or .ppt):**
+
+Use COM automation to extract content reliably from both formats:
+
+```python
+python -c "
+import win32com.client
+import pythoncom
+import os
+
+file_path = r'<FILE_PATH>'
+
+pythoncom.CoInitialize()
+try:
+    ppt = win32com.client.Dispatch('PowerPoint.Application')
+    pres = ppt.Presentations.Open(os.path.abspath(file_path), ReadOnly=True, Untitled=True, WithWindow=False)
+
+    print(f'Total slides: {pres.Slides.Count}')
+
+    for i in range(1, pres.Slides.Count + 1):
+        slide = pres.Slides(i)
+        print(f'\\n=== SLIDE {i} ===')
+
+        # Extract all text from the slide
+        for j in range(1, slide.Shapes.Count + 1):
+            shape = slide.Shapes(j)
+            if hasattr(shape, 'HasTextFrame') and shape.HasTextFrame:
+                if shape.TextFrame.HasText:
+                    text = shape.TextFrame.TextRange.Text.strip()
+                    if text:
+                        print(text)
+
+    pres.Close()
+    ppt.Quit()
+finally:
+    pythoncom.CoUninitialize()
+"
+```
+
+**Error Handling:**
+- If file not found: Ask user to verify the path
+- If COM automation unavailable: Ask user to ensure PowerPoint is installed (Windows) or provide a .pdf export
+- If file is corrupted: Inform user and suggest re-exporting from PowerPoint
+
 ### Step 2: Analyze the Presentation
 Read and analyze the PowerPoint file to understand:
 - The overall narrative and story flow

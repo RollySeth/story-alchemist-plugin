@@ -25,6 +25,103 @@ Analyze PowerPoint presentations to evaluate their emotional resonance, aestheti
 The user will provide a PowerPoint file path. If no file is provided, respond with:
 "Drop your deck and I'll read its aura - what vibes are we analyzing today?"
 
+**Supported Formats:** .pptx (modern), .ppt (legacy), .pdf
+
+### Step 1.5: Handle File Format
+
+**For PDF files:** Use the Read tool directly to view pages.
+
+**For PowerPoint files (.pptx or .ppt):**
+
+Use this approach to handle different formats gracefully:
+
+```python
+# Step A: Export slides as images for visual analysis
+python -c "
+import win32com.client
+import os
+import tempfile
+import pythoncom
+
+file_path = r'<FILE_PATH>'
+temp_dir = os.path.join(tempfile.gettempdir(), 'ppt_export')
+os.makedirs(temp_dir, exist_ok=True)
+
+pythoncom.CoInitialize()
+try:
+    ppt = win32com.client.Dispatch('PowerPoint.Application')
+    pres = ppt.Presentations.Open(os.path.abspath(file_path), ReadOnly=True, Untitled=True, WithWindow=False)
+
+    # Export key slides (adjust as needed)
+    for slide_num in [1, 2, 3, 5, min(10, pres.Slides.Count)]:
+        if slide_num <= pres.Slides.Count:
+            output = os.path.join(temp_dir, f'slide_{slide_num}.png')
+            pres.Slides(slide_num).Export(output, 'PNG', 1920, 1080)
+            print(output)
+
+    pres.Close()
+    ppt.Quit()
+finally:
+    pythoncom.CoUninitialize()
+"
+```
+
+Then use the Read tool to view the exported images and analyze visual design.
+
+**If COM automation fails or you need detailed metadata:**
+
+Extract presentation details using COM automation:
+
+```python
+python -c "
+import win32com.client
+import pythoncom
+import os
+
+file_path = r'<FILE_PATH>'
+
+pythoncom.CoInitialize()
+try:
+    ppt = win32com.client.Dispatch('PowerPoint.Application')
+    pres = ppt.Presentations.Open(os.path.abspath(file_path), ReadOnly=True, Untitled=True, WithWindow=False)
+
+    print(f'Slides: {pres.Slides.Count}')
+
+    for i in range(1, min(pres.Slides.Count + 1, 6)):  # First 5 slides
+        slide = pres.Slides(i)
+        print(f'\\n=== SLIDE {i} ===')
+
+        # Background color
+        try:
+            if slide.Background.Fill.Visible:
+                rgb = slide.Background.Fill.ForeColor.RGB
+                print(f'BG: RGB({rgb&255}, {(rgb>>8)&255}, {(rgb>>16)&255})')
+        except: pass
+
+        # Shapes and text
+        for j in range(1, slide.Shapes.Count + 1):
+            shape = slide.Shapes(j)
+            if hasattr(shape, 'HasTextFrame') and shape.HasTextFrame and shape.TextFrame.HasText:
+                text = shape.TextFrame.TextRange.Text.strip()
+                if text:
+                    print(f'Text: {text[:100]}')
+                    try:
+                        font = shape.TextFrame.TextRange.Font
+                        print(f'Font: {font.Name}, Size: {font.Size}')
+                    except: pass
+
+    pres.Close()
+    ppt.Quit()
+finally:
+    pythoncom.CoUninitialize()
+"
+```
+
+**Error Handling:**
+- If file not found: Ask user to verify the path
+- If COM automation unavailable: Ask user to ensure PowerPoint is installed (Windows)
+- If file is corrupted: Inform user and ask for a different format
+
 ### Step 2: Analyze the Presentation's Aura
 
 Read and deeply analyze the PowerPoint file across these dimensions:
