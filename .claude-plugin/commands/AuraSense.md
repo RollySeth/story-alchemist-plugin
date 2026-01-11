@@ -159,95 +159,41 @@ Read and deeply analyze the PowerPoint file across these dimensions:
 
 ### Step 3: Provide Feedback
 
-Your response MUST follow this exact structured format for maximum visual engagement:
+Your response MUST follow this structured format with a clean outer boundary:
 
-**OPENING: Big, bold announcement in a decorative box**
+**OUTER STRUCTURE:**
 ```
-╔═══════════════════════════════════════════════════════════════╗
-║                    YOUR DECK AURA IS:                         ║
-║          ✨ **[CREATIVE AURA NAME]** ✨                       ║
-║                                                               ║
-║              🎯 Aura Rating: X/10 [VIBE EMOJI]               ║
-╚═══════════════════════════════════════════════════════════════╝
+┌───────────────────────────────────────────────────────────┐
+│ [ENTIRE OUTPUT CONTENT GOES HERE WITH 65-CHAR WRAP]      │
+└───────────────────────────────────────────────────────────┘
 ```
 
-**STRUCTURE: Use decorative boxes and visual elements**
-
-**Section 1: The Vibe in One Line (in a box)**
+**OPENING: Title in a bold box**
 ```
-┌─────────────────────────────────────────────────────────────┐
-│ 💭 THE VIBE IN ONE LINE                                     │
-├─────────────────────────────────────────────────────────────┤
-│ [One playful, insightful sentence that captures the         │
-│ personality and makes them FEEL the vibe]                   │
-└─────────────────────────────────────────────────────────────┘
+╔═══════════════════════════════════════════════════════════╗
+║ YOUR DECK AURA IS: ✨ **[AURA NAME]** ✨                ║
+║ 🎯 Aura Rating: X/10 [VIBE EMOJI]                       ║
+╚═══════════════════════════════════════════════════════════╝
 ```
 
-**Section 2: Design DNA (with decorative header and emoji bullets)**
+**Section Headers: Simple lines above and below**
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎨 DESIGN DNA
+💭 THE VIBE IN ONE LINE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🎨 **Color Palette**
-   [Description with personality - what emotions do the colors convey?]
-
-✍️ **Typography**
-   [Character description - shouty, whisper-quiet, bold, refined?]
-
-⚡ **Visual Energy**
-   [Momentum description - frenetic, zen, dynamic, static?]
-
-🎭 **Overall Taste Level**
-   [Creative descriptor - "corporate chic", "startup scrappy", etc.]
-```
-
-**Section 3: The Full Vibe Check (in a styled box)**
-```
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ ✨ THE FULL VIBE CHECK                                     ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-
-[2-3 sentences describing what the presentation FEELS like using sensory,
-emotional, and aesthetic language. Be specific and evocative.]
-```
-
-**Section 4: Aura Enhancements (with decorative header and numbered emojis)**
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🚀 AURA ENHANCEMENTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-1️⃣ **[Bold Title]** - [Specific, actionable suggestion]
-
-2️⃣ **[Bold Title]** - [Specific, actionable suggestion]
-
-3️⃣ **[Bold Title]** - [Specific, actionable suggestion]
-
-4️⃣ **[Bold Title]** - [Specific, actionable suggestion]
-
-5️⃣ **[Bold Title]** - [Specific, actionable suggestion]
-```
-
-**Section 5: Real Talk (in a warning-style box)**
-```
-╔═══════════════════════════════════════════════════════════════╗
-║ 🎯 REAL TALK                                                  ║
-╠═══════════════════════════════════════════════════════════════╣
-║ [One candid observation about what needs work, delivered     ║
-║ with supportive humor and encouragement. Be honest but never ║
-║ harsh. This is the truth bomb wrapped in kindness.]          ║
-╚═══════════════════════════════════════════════════════════════╝
+[One playful, insightful sentence that captures the
+personality and makes them FEEL the vibe]
 ```
 
 **FORMATTING REQUIREMENTS:**
-- Use Unicode box drawing characters (═ ║ ╔ ╗ ╚ ╝ ─ │ ┌ ┐ └ ┘ ━ ┃ ┏ ┓ ┗ ┛ ├ ┤ ┬ ┴)
-- Use decorative lines between ALL major sections
+- Wrap entire output in ┌─┐ └─┘ box (65 chars wide)
+- Title: Use ╔═══╗ box with everything on ONE or TWO lines
+- Section headers: Simple ━━━ lines above and below only
+- Wrap all text to 65 characters max to fit within boundary
 - Make liberal use of emojis throughout for visual interest
-- Use bold text for emphasis and headers
-- Keep boxes and lines properly aligned
-- Ensure spacing is consistent and clean
-- The overall look should feel like a premium design report, not a plain text document
+- Use bold text for emphasis
+- One blank line between sections for clean spacing
 
 ## The Vibe Test for Naming (8/10 Fun Level)
 
@@ -274,82 +220,85 @@ When creating the aura name and output:
 ## Example Output Format
 
 ```
-╔═══════════════════════════════════════════════════════════════╗
-║                    YOUR DECK AURA IS:                         ║
-║        ✨ **Neon Dreams in a Corporate Suit** ✨             ║
-║                                                               ║
-║              🎯 Aura Rating: 7/10 ⚡                          ║
-╚═══════════════════════════════════════════════════════════════╝
-
-┌─────────────────────────────────────────────────────────────┐
-│ 💭 THE VIBE IN ONE LINE                                     │
-├─────────────────────────────────────────────────────────────┤
-│ Your deck is serving ambitious startup energy trapped in a │
-│ McKinsey template, and honestly? The tension works.        │
-└─────────────────────────────────────────────────────────────┘
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎨 DESIGN DNA
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-🎨 **Color Palette**
-   Bold primary blue meets safety-yellow accents - like a tech
-   conference lanyard had a glow-up
-
-✍️ **Typography**
-   Helvetica trying really hard to be interesting (it's working
-   on title slides, struggling in body text)
-
-⚡ **Visual Energy**
-   High-octane intro that settles into steady cruise control -
-   the pacing loses steam midway
-
-🎭 **Overall Taste Level**
-   "Corporate rebel" - playing it safe but with intentional edge
-
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ ✨ THE FULL VIBE CHECK                                     ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-
-This presentation feels like someone who went to design school put
-their heart into slides 1-5, then their project manager took over
-for the rest. There's a spark of creative rebellion fighting against
-corporate constraints, creating an unexpectedly compelling aesthetic
-friction. The design wants to break free but knows it still needs to
-get budget approval from finance.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🚀 AURA ENHANCEMENTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-1️⃣ **Commit to your color story** - Your palette has potential but
-   needs conviction. Either lean into the neon energy throughout or
-   soften it for cohesion. Right now it's a tease.
-
-2️⃣ **Bring title slide energy deeper** - Slides 8-12 feel visually
-   flat compared to your dynamic opener. Carry that momentum through
-   the entire deck.
-
-3️⃣ **Upgrade your typography game** - Consider fonts with more
-   personality (Montserrat? Inter? Something with character that
-   still reads professional).
-
-4️⃣ **Add authentic visual moments** - Your images are stock-photo-safe.
-   One custom illustration or unique visual would instantly elevate
-   the authenticity.
-
-5️⃣ **Let your ideas breathe** - Add more whitespace in text-heavy
-   slides (9, 11, 14). Dense content needs room to land.
-
-╔═══════════════════════════════════════════════════════════════╗
-║ 🎯 REAL TALK                                                  ║
-╠═══════════════════════════════════════════════════════════════╣
-║ Slide 7 looks like you ran out of time and slapped a bullet  ║
-║ list on a blue rectangle. Give it the love you gave slide 1, ║
-║ because right now it's the vibe-killer in an otherwise       ║
-║ interesting deck. Your opener promises sophistication—deliver ║
-║ that energy all the way through.                             ║
-╚═══════════════════════════════════════════════════════════════╝
+┌───────────────────────────────────────────────────────────┐
+│                                                           │
+│ ╔═══════════════════════════════════════════════════════╗ │
+│ ║ YOUR DECK AURA IS: ✨ **Neon Dreams in Corporate    ║ │
+│ ║ Suit** ✨                                            ║ │
+│ ║ 🎯 Aura Rating: 7/10 ⚡                              ║ │
+│ ╚═══════════════════════════════════════════════════════╝ │
+│                                                           │
+│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │
+│ 💭 THE VIBE IN ONE LINE                                  │
+│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │
+│                                                           │
+│ Your deck is serving ambitious startup energy trapped    │
+│ in a McKinsey template, and honestly? The tension works. │
+│                                                           │
+│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │
+│ 🎨 DESIGN DNA                                            │
+│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │
+│                                                           │
+│ 🎨 **Color Palette**                                     │
+│    Bold primary blue meets safety-yellow accents - like  │
+│    a tech conference lanyard had a glow-up               │
+│                                                           │
+│ ✍️ **Typography**                                        │
+│    Helvetica trying really hard to be interesting        │
+│    (working on title slides, struggling in body text)    │
+│                                                           │
+│ ⚡ **Visual Energy**                                     │
+│    High-octane intro that settles into steady cruise     │
+│    control - the pacing loses steam midway               │
+│                                                           │
+│ 🎭 **Overall Taste Level**                               │
+│    "Corporate rebel" - playing it safe with              │
+│    intentional edge                                      │
+│                                                           │
+│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │
+│ ✨ THE FULL VIBE CHECK                                   │
+│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │
+│                                                           │
+│ This presentation feels like someone who went to design  │
+│ school put their heart into slides 1-5, then their       │
+│ project manager took over for the rest. There's a spark  │
+│ of creative rebellion fighting corporate constraints,    │
+│ creating unexpectedly compelling aesthetic friction.     │
+│                                                           │
+│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │
+│ 🚀 AURA ENHANCEMENTS                                     │
+│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │
+│                                                           │
+│ 1️⃣ **Commit to your color story** - Your palette has    │
+│    potential but needs conviction. Either lean into      │
+│    the neon energy throughout or soften for cohesion.    │
+│                                                           │
+│ 2️⃣ **Bring title slide energy deeper** - Slides 8-12    │
+│    feel flat compared to your dynamic opener. Carry      │
+│    that momentum through the entire deck.                │
+│                                                           │
+│ 3️⃣ **Upgrade your typography game** - Consider fonts    │
+│    with more personality (Montserrat? Inter?).           │
+│                                                           │
+│ 4️⃣ **Add authentic visual moments** - Your images are   │
+│    stock-photo-safe. One custom illustration would       │
+│    instantly elevate the authenticity.                   │
+│                                                           │
+│ 5️⃣ **Let your ideas breathe** - Add more whitespace in  │
+│    text-heavy slides (9, 11, 14). Dense content needs    │
+│    room to land.                                         │
+│                                                           │
+│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │
+│ 🎯 REAL TALK                                             │
+│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │
+│                                                           │
+│ Slide 7 looks like you ran out of time and slapped a    │
+│ bullet list on a blue rectangle. Give it the love you    │
+│ gave slide 1, because right now it's the vibe-killer in  │
+│ an otherwise interesting deck. Your opener promises      │
+│ sophistication—deliver that energy all the way through.  │
+│                                                           │
+└───────────────────────────────────────────────────────────┘
 ```
 
 ## Notes
