@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "story-alchemist-marketplace",
+  "version": "1.0.0",
+  "description": "AI-powered PowerPoint presentation analyzer with story structure and aesthetic design analysis",
+  "owner": {
+    "name": "RollyOS",
+    "email": "rolly.seth@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "story-alchemist",
+      "description": "Transform PowerPoint presentations with AI-powered story structure and aesthetic design analysis. Includes two complementary skills: TaleTuner for narrative analysis and Aura Sense for aesthetic critique.",
+      "version": "1.0.0",
+      "author": {
+        "name": "RollyOS",
+        "email": "rolly.seth@gmail.com"
+      },
+      "source": "./.claude-plugin/"
+    }
+  ]
+}
