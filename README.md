@@ -53,19 +53,32 @@ Analyzes your presentation's emotional resonance, design choices, and visual per
 pip install pywin32 python-pptx
 ```
 
-### For VSCode Extension Users (Recommended)
-1. Copy this folder to your workspace
-2. Both TaleTuner and Aura Sense skills will be auto-discovered from `.claude/skills/`
-3. Reload VSCode window if needed (Ctrl+Shift+P → "Developer: Reload Window")
+### Claude Code Marketplace (Recommended)
 
-### For Claude Code CLI Users
+Install directly from the marketplace:
+
 ```bash
-# Copy skills to your Claude directory
-cp -r .claude/skills/* ~/.claude/skills/
+# Add the marketplace (one-time setup)
+claude plugin marketplace add https://github.com/RollySeth/story-alchemist-plugin.git
 
-# Or keep project-specific
-# Just ensure .claude/skills/ is in your working directory
+# Install the plugin
+claude plugin install story-alchemist@story-alchemist-marketplace
+
+# Enable the plugin (if not auto-enabled)
+claude plugin enable story-alchemist@story-alchemist-marketplace
 ```
+
+After installation, restart Claude Code to activate the skills.
+
+### Manual Installation
+
+Alternatively, clone the repository to your workspace:
+
+```bash
+git clone https://github.com/RollySeth/story-alchemist-plugin.git
+```
+
+Skills will be auto-discovered from the `skills/` directory.
 
 ## 🚀 Usage
 
@@ -166,25 +179,33 @@ could use a stronger call-to-action punch.
 
 ```
 story-alchemist-plugin/
-├── .claude-plugin/              # CLI plugin configuration
-│   ├── plugin.json             # Metadata for both skills
-│   ├── commands/
-│   │   ├── TaleTuner.md       # Story analysis skill
-│   │   └── AuraSense.md       # Aesthetic analysis skill
+├── .claude-plugin/              # Marketplace configuration
+│   ├── marketplace.json        # Marketplace metadata and plugin definition
+│   ├── plugin.json             # Legacy CLI plugin config
+│   ├── commands/               # Legacy command files (for reference)
+│   │   ├── TaleTuner.md
+│   │   └── AuraSense.md
 │   └── utils/
 │       ├── ppt_converter.py   # File format handler
 │       └── read_ppt.sh        # Shell wrapper
-├── .claude/                    # VSCode extension skills
+├── skills/                     # ✨ Main skills directory (Claude Code format)
+│   ├── taletuner/             # Story structure analysis
+│   │   └── SKILL.md           # TaleTuner skill definition
+│   └── aurasense/             # Aesthetic & design analysis
+│       └── SKILL.md           # AuraSense skill definition
+├── .claude/                    # Legacy VSCode extension structure
 │   └── skills/
-│       ├── taletuner/         # Story analysis
+│       ├── taletuner/
 │       │   └── skill.md
-│       └── aurasense/         # Aesthetic analysis
+│       └── aurasense/
 │           └── skill.md
 ├── README.md                   # This file
 ├── MARKETPLACE_README.md       # Marketplace listing
 ├── PACKAGING_GUIDE.md         # Publishing guide
 └── LICENSE                     # MIT License
 ```
+
+**Note:** The plugin uses the modern `skills/` directory structure at the root level for Claude Code marketplace compatibility. The `.claude/skills/` directory is maintained for backward compatibility.
 
 ## 🎯 Use Cases
 

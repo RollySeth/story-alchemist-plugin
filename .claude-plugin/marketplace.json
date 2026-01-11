@@ -17,7 +17,11 @@
         "email": "rolly.seth@gmail.com"
       },
       "source": "./",
-      "category": "productivity"
+      "category": "productivity",
+      "skills": [
+        "taletuner",
+        "aurasense"
+      ]
     }
   ]
 }
